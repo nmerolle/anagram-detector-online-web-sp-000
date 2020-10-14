@@ -9,7 +9,7 @@ end
   
 def match(possible_anagrams)
   array = []
-  possible_angrams.find_all do |x|
+  possible_angrams.each do |x|
    if (@word.split("").sort) == (x.split("").sort)
      array << x
    end
