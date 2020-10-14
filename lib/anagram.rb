@@ -12,8 +12,8 @@ def match(possible_anagrams)
   possible_angrams.find_all do |x|
    if (@word.split("").sort) == (x.split("").sort)
      array << x
+   end
   end
-end
 array
 end
   
