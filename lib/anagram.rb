@@ -8,6 +8,7 @@ def intiialize(word)
 end
   
 def match(possible_anagrams)
+  array = []
   possible_angrams.find_all do |x|
    if (@word.split("").sort) == (x.split("").sort)
      x
