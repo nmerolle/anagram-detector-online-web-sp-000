@@ -7,8 +7,9 @@ class Anagram
     @word = word
   end
   
-  def match
-    @word.split("") == 
+  def match(newwords)
+    
+    @word.split("") == newwords.split("") 
   
   
   
