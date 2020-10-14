@@ -7,9 +7,9 @@ class Anagram
     @word = word
   end
   
-  def match(newwords)
-    
-    @word.split("") == newwords.split("") 
+  def match(possible_anagrams)
+    possible_angrams.select do |x|
+    @word.split("") == x.split("") 
   
   
   
